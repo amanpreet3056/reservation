@@ -1,10 +1,10 @@
 ﻿<?php
 return [
     'db' => [
-        'host' => 'localhost',
-        'user' => 'your_db_user',
-        'pass' => 'your_db_pass',
-        'name' => 'reservation_system',
+        'host' => '147.93.99.137',
+        'user' => 'u624263077_resvung',
+        'pass' => 'l0oywUV$oY|5',
+        'name' => 'u624263077_resvung',
         'port' => 3306,
         'charset' => 'utf8mb4',
     ],
@@ -12,13 +12,13 @@ return [
         'session_key' => 'admin_id',
         'roles' => ['super_admin', 'admin', 'manager'],
         'default_super_admin' => [
-            'email' => 'superadmin@example.com',
-            'password' => 'ChangeMe123!',
+            'email' => 'amanpreetsinghpaul@gmail.com',
+            'password' => 'Witty132#',
             'name' => 'Super Admin',
         ],
     ],
     'app' => [
         'name' => "BachstA?b'l",
-        'url' => 'http://localhost/reservation/public',
+        'url' => 'https://testingtweaks.com/reservation/',
     ],
 ];

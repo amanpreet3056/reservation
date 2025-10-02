@@ -173,8 +173,13 @@ if (!function_exists('setting')) {
             return $cache[$key];
         }
 
-        $repository = new SettingRepository(db());
-        $value = $repository->getValue($key);
+        try {
+            $repository = new SettingRepository(db());
+            $value = $repository->getValue($key);
+        } catch (\Throwable $e) {
+            $cache[$key] = $default;
+            return $cache[$key];
+        }
 
         $cache[$key] = $value !== null ? $value : $default;
 
