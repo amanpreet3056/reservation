@@ -1,0 +1,3 @@
+# Store generated swap outputs locally without committing binaries.
+*
+!.gitignore
